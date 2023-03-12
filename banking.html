@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baap er bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <h1 class="text-6xl	text-center mt-16">Welcome To <span class="text-indigo-700	">Baap er Account</span></h1>
+    <section class="w-3/4 mx-auto my-16">
+        <div class="grid grid-cols-3 gap-4">
+            <div class=" bg-red-300 p-6 rounded-md		">
+                <h1 class="text-4xl">Credit Balance</h1>
+                <h4 class="text-4xl pt-4">$ <span id="previous-amount">00</span> </h4>
+            </div>
+            <div class="bg-amber-300 p-6 rounded-md		">
+                <h1 class="text-4xl">Withdraw Balance</h1>
+                <h4 class="text-4xl pt-4">$ <span id="previous-withdraw-amount">00</span></h4>
+            </div>
+            <div class="bg-lime-300	p-6 rounded-md	">
+                <h1 class="text-4xl">Total Balance</h1>
+                <h4 class="text-4xl pt-4">$<span id="total-balance">1300</span></h4>
+            </div>
+        </div>
+        <section class="my-8">
+            <div class="grid grid-cols-2 gap-4">
+                <div class="bg-green-300 p-6 rounded-md	">
+                    <h3 class="text-2xl">Credit amount</h3>
+                    <input id="credited-amount" class="h-9 mt-2 p-2 bg-slate-100" type="text"
+                        placeholder="Enter your credit amount"><br>
+                    <button id="credit-button" class=" block bg-pink-600 px-6 py-1 rounded-md mt-3">Credit</button>
+                </div>
+                <div class="bg-blue-300 p-6 rounded-md	">
+                    <h3 class="text-2xl">Withdraw amount</h3>
+                    <input id="withdraw-amount" class="h-9 mt-2 p-2 bg-slate-100" type="text"
+                        placeholder="Enter your withdraw amount"><br>
+                    <button id="withdraw-button" class=" block bg-pink-600 px-6 py-1 rounded-md mt-3">Withdraw</button>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <script src="js/banking2.js">
+    </script>
+    <script>
+
+    </script>
+</body>
+
+</html>
